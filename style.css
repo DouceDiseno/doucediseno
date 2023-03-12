@@ -1,0 +1,234 @@
+    /*HEADER*/
+body {
+    background-color: #EFEDE7;}
+
+.header_gral {
+    background-image: url(./media/celular.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;}
+
+.logo {
+    height: 30%;}
+
+.titulo_header {
+    font-family: special elite;
+    font-size: 3vw;
+    font-weight: bold;}
+
+.subtitulo_header {
+    font-family: caveat;
+    font-size:4vw;}
+
+    /*CARROUSEL*/
+.carrousel_gral {
+    height: 50px;}
+
+    /*OPCIONES*/
+
+.container_opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.img_opciones {
+    width:38%;}
+
+.text_opciones {
+    font-family: special elite;
+    font-size:19px;
+    font-weight: bold;
+    text-align: center;
+    width: 55%;}
+
+    /*DESCRIPCION*/
+
+.cont_descrip {
+    text-align: center;
+    height: 400px;
+    background-color: white;}
+
+.descrip_1 {
+    justify-content:center;}
+
+
+.text_descrip {
+    font-family: special elite;
+    font-size:22px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;}
+
+.img_descrip{
+    height: 100%;}
+
+.img_descrip_icon {
+    height: 100%;}
+
+.boton_modal {
+    border: none;
+    width:30%;
+    height: 20%;
+    background-color:transparent;}
+
+.boton_modal_color {
+    background-color: lightpink;
+    border: none;}
+
+
+    /*DISEÑOS*/
+
+.diseno_gral{
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.disenos_cont {
+    height: 95%;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size:cover;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;}
+
+.card-title {
+    font-family: caveat;
+    font-size: xx-large;}
+
+.img_titulos {
+    width: 70%;}
+
+.dis_1 {
+    background-image: url(./media/cas.png);}
+
+.dis_2 {
+    background-image: url(./media/quin.png);}
+
+.dis_3 {
+    background-image: url(./media/gradu2.png);}
+
+    .disenos_cont:hover{
+        filter: grayscale(95%);
+        transition: 2s;
+        height: 100%;
+        width: 100%;}
+
+
+
+    /*PRECIO*/
+
+.cont_precio {
+    height: 270px;
+    width: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 5px 10px grey;}
+
+.pdf {
+    background-color: rgb(149, 234, 229);
+}    
+
+.base {
+    background-color: rgb(93, 209, 203);}
+
+.combo {
+    background-color: lightseagreen;}
+
+.cont_precio p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: special elite;}
+
+
+    /*FOOTER*/
+
+.section_footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.sec_foot {
+    font-size:small;
+    text-align: start;
+    padding-top: 20px;}
+
+.logo_footer{
+    height:95px;}
+
+.icon_footer {
+    height: 30px;}
+    
+    .mail_footer:link {
+        text-decoration: none;
+        color: black;}
+    .mail_footer:visited {
+        text-decoration: none;
+        color: black;}
+    .section_footer a:link {
+        text-decoration: none;
+        color: black;}
+    .section_footer a:visited {
+        text-decoration: none;
+        color: black;}
+    
+ 
+    /*MEDIA QUERY*/
+@media (min-width:768px) and (max-width:1024px) { 
+        .text_descrip{
+            width: 90%;}
+        .img_titulos {
+            width: 35%;}}
+    
+@media (min-width:1024px) {
+        .cont_descrip {
+            height:450px;}
+        .text_descrip {
+           margin-top:55px;}
+        .img_titulos {
+            width: 30%;}}
+
+@media (min-width:768px) {
+    .header_gral {
+        height: 750px ;}
+    .subtitulo_header {
+        font-size:3vw;} 
+    .logo {
+        height: 40%;}   
+    .titulo_header {
+        font-size: 2vw;}
+    .descrip_1 {
+        justify-content: center;}
+    .card_propio {
+        width: 100%;}
+    .sec_foot {
+        padding-top: 20px;}
+    .diseno_gral{
+        flex-direction: row;
+        height: 300px;}
+    .disenos_cont {
+        height: 95%;
+        width: 30%;}
+        .disenos_cont:hover{
+            height: 100%;
+            width: 32%;
+        }}
+
+        
+        
