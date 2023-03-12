@@ -1,50 +1,60 @@
-    /*HEADER*/
-body {
-    background-color: #EFEDE7;}
+/*HEADER*/  
+.letra_specialelite {
+    font-family: special elite;}
+
+.letra_caveat {
+    font-family: caveat;}
 
 .header_gral {
     background-image: url(./media/celular.png);
     background-size:cover;
-    background-repeat: no-repeat;
-    text-align: center;
     height: 700px;}
-
-.logo {
-    height: 30%;}
-
-.titulo_header {
-    font-family: special elite;
-    font-size: 3vw;
-    font-weight: bold;}
-
-.subtitulo_header {
-    font-family: caveat;
-    font-size:4vw;}
-
-    /*CARROUSEL*/
-.carrousel_gral {
-    height: 50px;}
-
-    /*OPCIONES*/
-
-.container_opciones {
+    
+.item_opciones {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;}
+    justify-content:center;
+    align-items: center;}
 
 .img_opciones {
-    width:38%;}
+    width: 60%;}
 
-.text_opciones {
+.text_opciones{
     font-family: special elite;
     font-size:19px;
     font-weight: bold;
     text-align: center;
     width: 55%;}
 
-    /*DESCRIPCION*/
+.disenos_disponibles {
+    width: 80%;
+    margin: 30px;}
+
+.img_disenos {
+    height: 190px;
+    background-position: center;
+    background-size: cover;
+    filter:grayscale();
+    transition: 2s;}
+
+    .diseno1 {
+        background-image: url(./media/fotografica.png);}
+    .diseno2 {
+        background-image: url(./media/eucalipto.png);}
+    .diseno3 {
+        background-image: url(./media/floral.png);}
+    .diseno4 {
+        background-image: url(./media/festiv.png);}
+
+    .img_disenos:hover {
+        filter:none;
+        transition: 3s;}
+
+@media (min-width:768px) {
+    
+
+ 
+    /*DESCRIPCION
 
 .cont_descrip {
     text-align: center;
@@ -79,7 +89,7 @@ body {
     border: none;}
 
 
-    /*DISEÑOS*/
+    /*DISEÑOS
 
 .diseno_gral{
     height: 680px;
@@ -125,7 +135,7 @@ body {
 
 
 
-    /*PRECIO*/
+    /*PRECIO
 
 .cont_precio {
     height: 270px;
@@ -154,7 +164,7 @@ body {
     font-family: special elite;}
 
 
-    /*FOOTER*/
+    /*FOOTER
 
 .section_footer {
     background-color: white;
@@ -189,7 +199,7 @@ body {
         color: black;}
     
  
-    /*MEDIA QUERY*/
+    /*MEDIA QUERY
 @media (min-width:768px) and (max-width:1024px) { 
         .text_descrip{
             width: 90%;}
