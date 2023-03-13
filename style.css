@@ -1,4 +1,6 @@
-/*HEADER*/  
+/*PÁGINA PRINCIPAL*/
+
+    /*Header*/
 .letra_specialelite {
     font-family: special elite;}
 
@@ -10,6 +12,7 @@
     background-size:cover;
     height: 700px;}
     
+    /*Opciones*/
 .item_opciones {
     display: flex;
     flex-direction: column;
@@ -17,7 +20,7 @@
     align-items: center;}
 
 .img_opciones {
-    width: 60%;}
+    width: 45%;}
 
 .text_opciones{
     font-family: special elite;
@@ -26,69 +29,34 @@
     text-align: center;
     width: 55%;}
 
-.disenos_disponibles {
-    width: 80%;
-    margin: 30px;}
+    /*Diseños*/
 
-.img_disenos {
-    height: 190px;
-    background-position: center;
-    background-size: cover;
-    filter:grayscale();
+.disenosdisponibles {
+    width: 50%;}
+
+.text_modelos {
+    font-family: caveat;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30px;}
+
+.img_disenos_gral {
+    width: 40%;
     transition: 2s;}
 
-    .diseno1 {
-        background-image: url(./media/fotografica.png);}
-    .diseno2 {
-        background-image: url(./media/eucalipto.png);}
-    .diseno3 {
-        background-image: url(./media/floral.png);}
-    .diseno4 {
-        background-image: url(./media/festiv.png);}
+    .img_disenos_gral:hover {
+        width: 50%;}
 
-    .img_disenos:hover {
-        filter:none;
-        transition: 3s;}
+        /*Seccion video*/
 
-        
-
+.text_video {
+    font-family: special elite;
+    font-size: large;
+    text-align: center;
+    width: 75%;}
 
 
  
-  /*DESCRIPCION*/
-
-.cont_descrip {
-    text-align: center;
-    height: 400px;
-    background-color: white;}
-
-.descrip_1 {
-    justify-content:center;}
-
-
-.text_descrip {
-    font-family: special elite;
-    font-size:22px;
-    font-weight: bold;
-    text-align: center;
-    width: 80%;}
-
-.img_descrip{
-    height: 100%;}
-
-.img_descrip_icon {
-    height: 100%;}
-
-.boton_modal {
-    border: none;
-    width:30%;
-    height: 20%;
-    background-color:transparent;}
-
-.boton_modal_color {
-    background-color: lightpink;
-    border: none;}
-
  /*PRECIO*/
 
 .cont_precio {
@@ -100,16 +68,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 6px 5px 10px grey;}
-
-.pdf {
-    background-color: rgb(149, 234, 229);
-}    
-
-.base {
-    background-color: rgb(93, 209, 203);}
-
-.combo {
-    background-color: lightseagreen;}
 
 .cont_precio p {
     text-align: center;
@@ -152,40 +110,50 @@
         text-decoration: none;
         color: black;}
     
- 
-    /*MEDIA QUERY*/
-@media (min-width:768px) and (max-width:1024px) { 
-        .text_descrip{
-            width: 90%;}
-        .img_titulos {
-            width: 35%;}}
+
+/*EJEMPLO CASAMIENTOS*/
+
+.disenos_disponibles {
+    width: 80%;
+    margin: 30px;}
+
+.img_disenos {
+    height: 190px;
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+    border: solid 10px white;}
+
+    .diseno-c1 {
+        background-image: url(./media/fotografica.png);}
+    .diseno-c2 {
+        background-image: url(./media/eucalipto.png);}
+    .diseno-c3 {
+        background-image: url(./media/floral.png);}
+    .diseno-c4 {
+        background-image: url(./media/festiv.png);}
+    .diseno-g1 {
+        background-image: url(./media/fotografica.png);}
+    .diseno-g2 {
+        background-image: url(./media/eucalipto.png);}
+    .diseno-g3 {
+        background-image: url(./media/floral.png);}
+    .diseno-g4 {
+        background-image: url(./media/festiv.png);}
+
+    .img_disenos:hover {
+        filter:grayscale(100%);
+        transition: 3s;}    
+
     
-@media (min-width:1024px) {
-        .cont_descrip {
-            height:450px;}
-        .text_descrip {
-           margin-top:55px;}
-        .img_titulos {
-            width: 30%;}}
-
 @media (min-width:768px) {
- 
-    .descrip_1 {
-        justify-content: center;}
-    .card_propio {
-        width: 100%;}
-    .sec_foot {
-        padding-top: 20px;}
-    .diseno_gral{
-        flex-direction: row;
-        height: 300px;}
-    .disenos_cont {
-        height: 95%;
-        width: 30%;}
-        .disenos_cont:hover{
-            height: 100%;
-            width: 32%;
-        }}
+    .img_disenos_gral {
+        width: 75%;}
+        .img_disenos_gral:hover {
+            width: 85%;}
+    .disenosdisponibles {
+        width: 25%;}}
+        
 
-        
-        
+
+
