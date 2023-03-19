@@ -26,13 +26,11 @@
           
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">¿Quienes somos?</a>
-            </li>           
-            <li class="nav-item">
-              <a class="nav-link" href="#opciones">Opciones</a>
+              <a class="nav-link active" 
+              href="#opciones">Secciones</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="#beneficios">Beneficios</a>
+              <a class="nav-link" href="#disenos">Diseños</a>
             </li>  
             <li class="nav-item">
               <a class="nav-link" href="#precio">Precio</a>
@@ -53,8 +51,8 @@
         <div class="col-12 header_gral
         d-flex flex-column align-items-center justify-content-center">
           <img class="logo" src="./media/logosinfondo.png" height="30%">
-          <p class="letra_specialelite fs-5">Invitaciones interactivas</p>
-          <p class="letra_caveat fs-1">Facil y rápido</p>
+          <p style="font-family: special elite; font-size: x-large;">Invitaciones interactivas</p>
+          <p style="font-family: caveat; font-size: xx-large;">Facil y rápido</p>
         </div>
       </div>
     </header>
@@ -136,7 +134,9 @@
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"> En los ejemplos que están disponibles debajo se encuentran todos los elementos que se le pueden agregar, cualquier sección que desees quitarle, se quita sin problemas. Por ejemplo: si no querés enlazar una playlist de Spotify, podemos retirarlo sin problema.</div>
+            <div class="accordion-body">Se puede quitar toda sección que no pretendas ver en tu invitación. <br>
+              También modificar el texto de alguna sección específica.
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -170,7 +170,7 @@
 
     <!--DISEÑOS-->
     <section class="container-flex"
-    style="background-color: rgb(228, 232, 235);">
+    style="background-color: rgb(228, 232, 235);" id="disenos">
       <div class="row">
         <div class="col-12
         d-flex flex-column align-items-center justify-content-center">
@@ -210,10 +210,8 @@
 
     </section>
 
-
-    <!--DESCRIPCIÓN-->
-
-    <section class="container-flex">
+    <!--DESCRIPCIÓN/video-->
+    <section class="container-flex" id="contacto">
       <div class="row"
       style="margin-top: 30px; margin-bottom: 30px;">
         <div class="col-12 col-md-6
@@ -228,20 +226,18 @@
         <div class="col-12 col-md-6
         d-flex flex-column align-items-center justify-content-center"
         style="border-left: solid 3px grey ;">
-          <video src="./media/video.mp4" width="30%"></video>
+          <video src="./media/video.mp4" controls width="30%"></video>
         </div>
       </div>
     </section>
 
-
     <!--PRECIO-->
-
     <section class="container-flex"
     style="background-color: rgb(228, 232, 235);;">
       <div class="row">
         <div class="col-12 
         d-flex flex-column align-items-center justify-content-center" id="precio">
-          <img class="img_titulos disenosdisponibles" src="./media/precios.png">
+          <img class="disenosdisponibles" src="./media/precios.png">
         </div>
       </div>
       
@@ -254,7 +250,11 @@
             <p style="font-weight:bolder; font-size:xx-large;" >$1500</p>
             <p style="font-size:small;" >Formato PDF<br>
                Difusión ilimitada <br>
-               Links a elección (Ej: Confirmación a WhatsApp, Gps, etc.)</p>
+               Links a elección <br> 
+               (Ej: Confirmación a <br>
+               WhatsApp, Gps, etc.)</p>
+               <button class="btn_precio"
+               data-bs-toggle="modal" data-bs-target="#precio_estatico">Ver ejemplo</button>
           </div>
         </div>
          
@@ -269,8 +269,11 @@
                 Sitio Web<br>
                Secciones a elección <br>
                Difusión ilimitada <br>
-               SIN Invitación imprimible
+               SIN Invitación <br>
+               imprimible
             </p>
+            <button class="btn_precio"
+            data-bs-toggle="modal" data-bs-target="#precio_basico">Ver ejemplo</button>
           </div> 
         </div>
 
@@ -284,12 +287,64 @@
               Sitio Web<br>
               Secciones a elección <br>
               Difusión ilimitada <br>
-              Con Invitación imprimible
+              Con Invitación <br> 
+              imprimible
             </p>
+            <button class="btn_precio"
+            data-bs-toggle="modal" data-bs-target="#precio_combo">Ver ejemplo</button>
           </div>
         </div>
       </div>
     </section>
+
+    <!--MODAL PRECIOS-->
+    <!--modal estático-->
+
+    <div class="modal fade" id="precio_estatico" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Invitaciones PDF</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./media/precio1.png" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal basico-->
+
+    <div class="modal fade" id="precio_basico" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Invitaciones Web Web</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./media/precio2.png" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal combo-->
+
+    <div class="modal fade" id="precio_combo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Invitaciones Web</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./media/precio3.png" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--FOOTER-->
     <footer class="container-flex">
@@ -308,7 +363,7 @@
             <div class="col-4 col-md-3 section_footer sec_foot">      
                 <p>SECCIONES</p>
                 <ul>
-                    <li><a href="./paginas/ejemplo1.html">Opciones</a></li>
+                    <li><a href="#opciones">Opciones</a></li>
                     <li><a href="#beneficios">Beneficios</a></li>
                     <li><a href="#precios">Precios</a></li>
                 </ul>

@@ -1,11 +1,6 @@
 /*PÁGINA PRINCIPAL*/
 
     /*Header*/
-.letra_specialelite {
-    font-family: special elite;}
-
-.letra_caveat {
-    font-family: caveat;}
 
 .header_gral {
     background-image: url(./media/celular.png);
@@ -60,8 +55,6 @@
  /*PRECIO*/
 
 .cont_precio {
-    height: 270px;
-    width: 200px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -71,9 +64,17 @@
 
 .cont_precio p {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 10px 20px 0px 20px;
     font-family: special elite;}
+
+.btn_precio {
+    border-radius: 20px;
+    border: none;
+    font-family: caveat;
+    font-size:medium;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 1px 1px 2px grey;
+    margin: 15px 0px 15px 0px;}
 
 
     /*FOOTER*/
@@ -111,7 +112,9 @@
         color: black;}
     
 
-/*EJEMPLO CASAMIENTOS*/
+
+
+/*PÁGINAS DE EJEMPLOS*/
 
 .disenos_disponibles {
     width: 80%;
@@ -122,16 +125,23 @@
     background-position: center;
     background-size: cover;
     transition: 2s;
-    border: solid 10px white;}
+    border: solid 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 
-    .diseno-c1 {
+/*bodas*/
+    .diseno-b1 {
         background-image: url(./media/fotografica.png);}
-    .diseno-c2 {
+    .diseno-b2 {
         background-image: url(./media/eucalipto.png);}
-    .diseno-c3 {
+    .diseno-b3 {
         background-image: url(./media/floral.png);}
-    .diseno-c4 {
+    .diseno-b4 {
         background-image: url(./media/festiv.png);}
+
+/*graduaciones*/
     .diseno-g1 {
         background-image: url(./media/fotografica.png);}
     .diseno-g2 {
@@ -141,18 +151,45 @@
     .diseno-g4 {
         background-image: url(./media/festiv.png);}
 
+/*cumpleaños*/
+    .diseno-c1 {
+        background-image: url(./media/festiv.png);}
+    .diseno-c2 {
+        background-image: url(./media/eucalipto.png);}
+    .diseno-c3 {
+        background-image: url(./media/floral.png);}
+    .diseno-c4 {
+        background-image: url(./media/festiv.png);}
+
     .img_disenos:hover {
         filter:grayscale(100%);
         transition: 3s;}    
 
-    
+.btn_transparente {
+    height: 100%;
+    width: 100%;
+    border: none;}
+
+.text_ejemplos {
+    margin-top: 35px;
+    font-family: special elite;
+    font-size: x-large;}
+
+    /*MODAL'S PRECIOS*/
+
+.precio_gral {
+    width: 80%;
+    height: 250px;}
+
 @media (min-width:768px) {
     .img_disenos_gral {
         width: 75%;}
         .img_disenos_gral:hover {
             width: 85%;}
     .disenosdisponibles {
-        width: 25%;}}
+        width: 25%;}
+    .header_gral{
+        height: 600px;}}
         
 
 
