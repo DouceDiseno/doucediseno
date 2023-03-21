@@ -1,6 +1,70 @@
-/*ESTILO EJEMPLO CASAMIENTO fotografico*/
+/*TIPOS DE TEXTO PARA INFORMACIÓN*/
 
-.header_principal {
+.titulo1 {
+    font-family: ubuntu;
+    font-weight:900;
+    text-align: center;
+    font-size: large;}
+
+    .iconostitulo {
+        width: 9%;}
+
+.texto1 {
+    font-family: Kurale;
+    font-weight: none;
+    text-align: center;
+    font-size: medium;
+    margin: 0px 20px 0px 20px;}
+
+.recuadro1 {
+    box-shadow: 2px 2px 3px grey;
+    background-color: white;
+    margin: 20px 60px 20px 60px;
+    padding: 20px 0px 20px 0px;}
+
+.recuadro2 {
+    background-color: white;
+    border: 5px #FF914D solid;
+    padding: 30px;}
+
+     /*seccion iconos juntos*/
+.sec_iconos_juntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+/*ESTILOS MODAL*/
+
+.modal1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+/*ESTILOS DE BOTONES*/
+
+.btn1 {
+    border-color: transparent;
+    border-radius: 15px;
+    font-family: josefin sans;
+    font-size: small;
+    padding: 0px 7px 0px 7px;
+    box-shadow: 1px 1px 2px grey;}
+
+.btn2 {
+    border-color: transparent;
+    border-radius: 15px;
+    font-family: josefin sans;
+    font-size: small;
+    padding: 2px 7px 2px 7px;
+    box-shadow: 1px 1px 2px grey;
+    color: white;}
+
+/*ESTILOS HEADER*/
+
+.header_sinfrase {
     background-image:url(../media/gradu/graduejemplo.png) ;
     background-color: #AAA47E;
     background-position: center;
@@ -8,135 +72,44 @@
     background-repeat: no-repeat;
     height:700px;}
 
-.container_frase {
-    background-color: #021D43;
-    color: white;}
+/*ESTILOS FRASES*/
 
-.frase {
+.frase_cookie {
     font-family: cookie;
     font-size: 30px;
-    margin: 30px 10px 30px 10px;}
+    margin: 30px 10px 30px 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;}
 /*
 .autor {
     font-family: josefin sans;
     margin-bottom: 35px;
     font-size: x-large;}*/
 
-.container_banner {
-    background-color: #bbc169;}
+/*ESTILOS SPOTIFY*/
 
-.fotos_gradu {
-    width: 98%;
-    object-fit: cover;
-    background-color: #EFEDE7;
-    margin: 5px;
-    box-shadow: 2px 2px 5px;
-    border:#ebecec 3px solid}
+.spotify1 {
+    background-image: url(../media/gradu/fondospotify.png);
+    background-position: center;
+    background-size: cover;}
 
-.contenedor_ceremonia {
-    margin: 25px;
-    border-radius: 20px;
-    box-shadow: 6px 4px 15px #2e3336 ;
-    background-color:whitesmoke;}
+/*ESTILOS HASHTAG*/
 
-.titulo_evento {
-    font-size: x-large;
-    font-family: cinzel;
-    font-weight: bold;}
+.hashtag1 {
+    background-position: center;
+    background-size: cover;}
 
-.text_evento {
-    font-family: advent pro;
-    font-size: x-large;
-    width: 90%;}
-
-.boton_eventos {
-    border-radius: 50px;
-    border-color: transparent;
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    font-family: josefin sans;}
-
-    .boton_claro {
-       color:#637b89 ;
-       background-color: white;
-
-    }
-    .boton_oscuro {
-        color: white;
-        background-color: #637b89;
-    }
-
-.spotify_gral {
-    background-image: url(../media/fondo_spotifi.png);
-    background-size: cover;
-    background-position: center;}
-
-.te_recomendamos {
-    font-size: xx-large;
-    margin-top: 30px;}
-
-
-.nuestra_playlist {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-family: cookie;}
-
-
-.seccion_regalos {
-    background-color: #AAA47E;
+.texthashtag {
+    font-family: Hachi Maru Pop;
+    font-size: 55px;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;}
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    text-align: center;}
 
-.img_regalo {
-    width: 25%;}        
-    
-    .modal_regalos {
-        width: 100%;
-        background-color: #AAA47E;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;}
-
-    .modal_regalos2 {
-        background-color: #EFEDE7;
-        width: 90%;
-        height: 90%;
-        margin: 30px;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        border-radius: 35px;}     
-
-.boton_transparente {
-    border: none;
-    background-color: transparent;}
-
-.seccion_asistencia {
-    background-color: whitesmoke;
-    padding-top: 30px;
-    padding-bottom: 30px;}
-
-.redes_hashtag {
-    margin: 10px;}
-
-.hashtag_text {
-    font-size: 8vw;
-    color: white;
-    font-family: josefin sans;}
-
-.seccion_frase_final {
-    background-color:#AAA47E;
-    color: whitesmoke;
-    font-family: cookie;
-    font-size: xx-large; 
-    padding: 30px;}
-
-
+/*ESTILOS FOOTER*/
                        
     .mail_footer:link {
                 text-decoration: none;
@@ -147,9 +120,15 @@
         .section_footer a:link {
                 text-decoration: none;
                 color: black;}
+
+/*ESTILOS MEDIA*/
                 
 @media (min-width:1024px) {
     .header_principal {
-        height: 550px;
-    }
-}
+        height: 550px;}}
+
+@media (min-width:780px) {
+    .texto1 {
+        font-size: x-large;}
+    .titulo1 {
+        font-size: xx-large;}}
