@@ -6,6 +6,19 @@
     background-image: url(./media/celular.png);
     background-size:cover;
     height: 700px;}
+
+    /*Títulos pag*/
+
+.titulospag {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: kurale;
+    font-size: x-large;
+    margin: 20px 0px 10px 0px;
+}
     
     /*Opciones*/
 .item_opciones {
@@ -23,6 +36,11 @@
     font-weight: bold;
     text-align: center;
     width: 55%;}
+
+    /*Acordeon*/
+
+.text_acordeon {
+    font-family: kurale;}
 
     /*Diseños*/
 
@@ -42,7 +60,35 @@
     .img_disenos_gral:hover {
         width: 50%;}
 
-        /*Seccion video*/
+
+    /*PASOS A SEGUIR*/
+
+.pasosaseguir {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;}
+
+.nro_pasos {
+    margin: 25px;
+    font-family: special elite;
+    font-size:larger;
+    color: dodgerblue;
+    font-weight: bolder;}
+
+.text_pasos {
+    padding-top: 15px;
+    border-top: solid 1px rgb(197, 236, 255);
+    font-family: kurale;
+    width:90%;}
+
+.btn_pasos {
+    background-color: dodgerblue;
+    border: solid transparent 1px;
+    border-radius: 15px;
+    color: white;}
+
+    /*Seccion video*/
 
 .text_video {
     font-family: special elite;
@@ -60,7 +106,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 6px 5px 10px grey;}
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px grey;
+    background-color: white;}
 
 .cont_precio p {
     text-align: center;
@@ -68,19 +117,20 @@
     font-family: special elite;}
 
 .btn_precio {
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
-    font-family: caveat;
-    font-size:medium;
+    font-family: kurale;
+    font-size:small;
+    color: white;
     padding: 0px 10px 0px 10px;
     box-shadow: 1px 1px 2px grey;
-    margin: 15px 0px 15px 0px;}
+    margin: 15px 0px 15px 0px;
+    background-color: cornflowerblue;}
 
 
     /*FOOTER*/
 
 .section_footer {
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
