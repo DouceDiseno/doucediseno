@@ -1,13 +1,6 @@
 /*PÁGINA PRINCIPAL*/
 
-    /*Header*/
-
-.header_gral {
-    background-image: url(./media/celular.png);
-    background-size:cover;
-    height: 700px;}
-
-    /*Títulos pag*/
+/*Títulos y secciones*/
 
 .titulospag {
     display: flex;
@@ -17,10 +10,34 @@
     padding: 20px;
     font-family: kurale;
     font-size: x-large;
-    margin: 20px 0px 10px 0px;
-}
-    
-    /*Opciones*/
+    background: linear-gradient(to right, lightsteelblue,rgb(255, 255, 255));}
+
+.titulos_secciones { 
+    margin: 30px 30px 30px 45px;
+    padding-left: 15px;
+    border-left: dotted 3px #ff4500;}
+
+.text_titulos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
+    font-weight: bold;
+    text-align: start;}
+
+.text_subtitulos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:large;}
+
+
+/*HEADER*/
+
+.header_gral {
+    background-image: url(./media/celular.png);
+    background-size:cover;
+    height: 700px;}
+
+
+/*SECCIONES*/
+
 .item_opciones {
     display: flex;
     flex-direction: column;
@@ -37,47 +54,71 @@
     text-align: center;
     width: 55%;}
 
-    /*Acordeon*/
+
+/*ACORDEON*/
 
 .text_acordeon {
     font-family: kurale;}
 
-    /*Diseños*/
 
-.disenosdisponibles {
-    width: 50%;}
+/*DISEÑOS*/
 
-.text_modelos {
+.recuadro_gral_diseno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.recuadro_diseno {
+    width: 250px;
+    height: 250px;
+    padding-left: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: 2s;
+    margin: 10px;}
+
+   .recuadro_diseno:link, .recuadro_diseno:visited, .recuadro_diseno:active {
+        text-decoration: none;}
+    .recuadro_diseno:hover {
+        width: 350px;
+        height: 300px;}
+
+.text_recuadro {
     font-family: caveat;
-    text-align: center;
-    font-size: x-large;
-    margin-bottom: 30px;}
+    font-size:40px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(156, 156, 156);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;}
 
-.img_disenos_gral {
-    width: 40%;
-    transition: 2s;}
-
-    .img_disenos_gral:hover {
-        width: 50%;}
+.subtext_recuadro {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 
-    /*PASOS A SEGUIR*/
+/*PASOS A SEGUIR*/
 
 .pasosaseguir {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;}
 
 .nro_pasos {
     margin: 25px;
     font-family: special elite;
-    font-size:larger;
+    font-size: larger;
     color: dodgerblue;
     font-weight: bolder;}
 
 .text_pasos {
-    padding-top: 15px;
+    padding-top: 20px;
     border-top: solid 1px rgb(197, 236, 255);
     font-family: kurale;
     width:90%;}
@@ -88,44 +129,70 @@
     border-radius: 15px;
     color: white;}
 
-    /*Seccion video*/
+    
+/*IMG GRANDE*/
 
-.text_video {
-    font-family: special elite;
+.img_grande{
+    height: 400px;
+    background-image: url(./media/imggrande.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 30px;}
+
+.text_img_grande{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    width: 90%;
+    text-shadow: 3px 1px 2px rgb(186, 186, 186);}
+
+
+/*TEXTO DESCRIPCION*/
+
+.text_descripcion {
+    font-family: kurale;
     font-size: large;
-    text-align: center;
-    width: 75%;}
+    margin: 20px 20px 20px 50px;
+    color: orangered;}
 
-
+.tamano_video {
+    width: 40%;}
  
  /*PRECIO*/
 
-.cont_precio {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    box-shadow: 6px 5px 10px grey;
-    background-color: white;}
+.fondo_precio {
+    background: linear-gradient(to top, lightsteelblue,rgb(230, 240, 252));}
 
-.cont_precio p {
+.container_precio {
+    background-color: aliceblue;
+    margin: 20px;
+    box-shadow: 6px 5px 10px grey;}
+
+.titulo_precio {
+    font-family: kurale;
+    font-size: large;
+    font-weight: bold;}
+
+.text_precio {
+    font-family: kurale;
+    font-size: medium;
     text-align: center;
-    margin: 10px 20px 0px 20px;
-    font-family: special elite;}
+    margin: 0px 15px 20px 15px;}
+
+.precio_color {
+    color: orangered;
+    font-family: special elite;
+    font-size: xx-large;}
 
 .btn_precio {
-    border-radius: 10px;
-    border: none;
     font-family: kurale;
     font-size:small;
     color: white;
-    padding: 0px 10px 0px 10px;
+    padding: 6px 20px 6px 20px;
     box-shadow: 1px 1px 2px grey;
-    margin: 15px 0px 15px 0px;
-    background-color: cornflowerblue;}
+    margin-bottom: 20px;
+    background-color: orangered;
+    border: none;}
 
 
     /*FOOTER*/
@@ -138,7 +205,7 @@
     text-align: center;}
 
 .sec_foot {
-    font-size:small;
+    font-size:x-small;
     text-align: start;
     padding-top: 20px;}
 
@@ -164,7 +231,14 @@
 
 
 
+
+
 /*PÁGINAS DE EJEMPLOS*/
+
+.text_ejemplos {
+    margin-top: 35px;
+    font-family: special elite;
+    font-size: x-large;}
 
 .disenos_disponibles {
     width: 80%;
@@ -220,10 +294,6 @@
     width: 100%;
     border: none;}
 
-.text_ejemplos {
-    margin-top: 35px;
-    font-family: special elite;
-    font-size: x-large;}
 
     /*MODAL'S PRECIOS*/
 
@@ -239,7 +309,21 @@
     .disenosdisponibles {
         width: 25%;}
     .header_gral{
-        height: 600px;}}
+        height: 600px;}
+    .contenedor_etiqueta {
+        width: 60%;}
+    .text_chek {
+        font-size: larger;}
+    .tamano_video {
+        width: 40%;}
+    .recuadro_diseno {
+        width: 350px;
+        height: 350px;}
+    .recuadro_gral_diseno {
+        flex-direction: row;}
+        .recuadro_diseno:hover {
+            width: 450px;
+            height: 400px;}}
         
 
 
