@@ -1,0 +1,103 @@
+/*ESTILO EJEMPLO CASAMIENTO fotografico*/
+
+.header_principal {
+    background-image:url(../media/cumple/portada.png) ;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:600px;}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.countdown-items-contain{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: advent pro;
+    font-size:large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.countdown-item{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: advent pro;
+    font-weight:1000;
+    font-size:x-large;
+}
+
+.recuadro-tiktok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.texto-info-tiktok{
+    position: absolute;
+    color: rgb(8, 8, 8);
+    width: 75%;
+    font-family: advent pro;
+    font-weight:1000;
+    font-size:x-large;
+}
+
+.spotify1 {
+    background-image: url(../media/gradu/fondospotify.png);
+    background-position: center;
+    background-size: cover;}
+
+.fondo2{
+    background-image: url(../media/cumple/fondo2.png);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+}
+
+.text-tiktok{
+    color: rgb(255, 255, 255);
+    width: 75%;
+    font-family: advent pro;
+    font-weight:bold;
+    font-size:17px;
+    margin: 10px;
+    text-align: center;
+}
+
+.img-icon{
+    width: 25%;
+    transition: 2s;
+    margin-bottom: 40px;
+}
+.img-icon:hover {
+    width: 35%;
+}
+
+.redes-tiktok {
+    background-image: url(../media/cumple/fondo-redes.png);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+

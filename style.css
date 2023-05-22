@@ -161,12 +161,19 @@
  /*PRECIO*/
 
 .fondo_precio {
-    background: linear-gradient(to top, lightsteelblue,rgb(230, 240, 252));}
+    background: linear-gradient(to top, lightsteelblue,rgb(230, 240, 252));
+    height: 500px;}
 
 .container_precio {
     background-color: aliceblue;
-    margin: 20px;
-    box-shadow: 6px 5px 10px grey;}
+    margin: 0px 10px 0px 10px;
+    box-shadow: 6px 5px 10px grey;
+    height: 380px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 
 .titulo_precio {
     font-family: kurale;
@@ -176,8 +183,7 @@
 .text_precio {
     font-family: kurale;
     font-size: medium;
-    text-align: center;
-    margin: 0px 15px 20px 15px;}
+    text-align: center;}
 
 .precio_color {
     color: orangered;
@@ -190,7 +196,6 @@
     color: white;
     padding: 6px 20px 6px 20px;
     box-shadow: 1px 1px 2px grey;
-    margin-bottom: 20px;
     background-color: orangered;
     border: none;}
 
